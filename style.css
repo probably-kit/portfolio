@@ -1,0 +1,138 @@
+body {
+  background-color: #1f1c1c;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10em;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header-links {
+  display: flex;
+  gap: 0.5em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.scroll-indicator {
+  text-align: center;
+}
+
+.scroll-text {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+  animation: fadeIn 4s infinite;
+}
+
+@keyframes fadeIn {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.arrow-container {
+  position: relative;
+  width: 25px;
+  /* Size of the arrow */
+  height: 50px;
+  /* Height of the animation */
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  margin-left: -12.5px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+  animation: scrollDown 2s infinite;
+  box-sizing: border-box;
+}
+
+.arrow:nth-child(2) {
+  animation-delay: 0.75s;
+  /* Starts this arrow's animation later */
+}
+
+@keyframes scrollDown {
+  0% {
+    opacity: 0;
+    bottom: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    bottom: 20px;
+  }
+}
+
+
+.features-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* Creates 4 columns */
+  grid-template-rows: repeat(2, auto);
+  /* Creates 2 rows */
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  height: 25em;
+  text-align: center;
+}
+
+.long {
+  grid-column: 1 / 3;
+}
+
+.works-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  /* Creates 2 columns */
+  grid-template-rows: repeat(2, auto);
+  /* Creates 2 rows */
+
+}
+
+.works-grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  height: 25em;
+  width: 25em;
+  text-align: center;
+}
+
