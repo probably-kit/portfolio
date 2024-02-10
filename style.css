@@ -30,8 +30,21 @@ a {
   justify-content: space-around;
 }
 
+.row{
+  flex-direction: row;
+
+}
+
+.width-limit{
+  max-width:20em;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .scroll-indicator {
   text-align: center;
+  margin: 6em;
 }
 
 .scroll-text {
@@ -108,8 +121,8 @@ a {
 }
 
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: #1f1c1c;
+  border: 1px solid #ffffff;
   padding: 20px;
   height: 25em;
   text-align: center;
@@ -136,3 +149,15 @@ a {
   text-align: center;
 }
 
+
+h1 {
+  font-size: 9em;
+  margin: 0;
+  padding: 0;
+}
+
+.crursive-title {
+  font-size: 9em;
+  margin: 0;
+  padding: 0;
+}
