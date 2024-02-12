@@ -67,49 +67,64 @@ a {
   }
 }
 
+.border-path {
+  fill: none;
+  stroke: gray;
+  stroke-width: 0.5; /* Adjust the border thickness here */
+}
+
 .arrow-container {
-  position: relative;
-  width: 25px;
-  /* Size of the arrow */
-  height: 50px;
-  /* Height of the animation */
+  position: absolute;
+  top: 8em;
+  left:10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .arrow {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
+  position: relative;
   width: 25px;
   height: 25px;
   margin-left: -12.5px;
-  border-right: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
   transform: rotate(45deg);
   animation: scrollDown 2s infinite;
   box-sizing: border-box;
 }
 
 .arrow:nth-child(2) {
-  animation-delay: 0.75s;
-  /* Starts this arrow's animation later */
+  animation-delay: 0.75s; /* Start the second arrow's animation later */
 }
 
 @keyframes scrollDown {
   0% {
-    opacity: 0;
-    bottom: 0;
+      opacity: 0;
+      bottom: 0;
   }
 
   50% {
-    opacity: 1;
+      opacity: 1;
   }
 
   100% {
-    opacity: 0;
-    bottom: 20px;
+      opacity: 0;
+
   }
 }
+.scroll-box{
+  text-align: center; 
+  position: relative;
 
+}
+
+.scroll-box > svg {
+width: 20em;
+height: 20em;
+
+}
 
 .skills-grid-container {
   display: grid;
