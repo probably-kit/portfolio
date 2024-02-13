@@ -10,7 +10,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 10em;
+  margin-bottom: 8em;
 }
 
 a {
@@ -128,9 +128,9 @@ height: 20em;
 
 .skills-grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 25em);
   /* Creates 4 columns */
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(2, 25em);
   /* Creates 2 rows */
   padding: 10px;
   margin: 2em;
@@ -140,13 +140,13 @@ height: 20em;
   background-color: #202020;
   /* border: 1px solid #ffffff; */
   padding: 20px;
-  height: 25em;
+ 
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 4em;
+  gap: 2em;
 }
 
 
@@ -162,14 +162,21 @@ height: 20em;
 
 .works-grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 25em);
+  grid-template-rows: repeat(2, 25em);
+  gap: 2em;
 }
 
 .works-grid-item {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  border: 1px solid #ffffff;
+  text-align: center;
+  border-radius: 25px;
+  padding: 1em;
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -198,3 +205,26 @@ svg {
 }
 
 
+#sub {
+  background-image: url('./img/subscription-menu.png');
+}
+
+#todo {
+  background-image: url('./img/todo.png');
+}
+
+#library {
+  background-image: url('./img/library.png');
+}
+
+.works-grid-item a {
+  display: inline-block;
+  padding: .5em 1em;
+  margin-top: 1em; /* Adjust as needed */
+  color: #fff; /* Adjust color as needed */
+  background-color: rgba(66, 65, 65, 0.658); /* Semi-transparent gray background */
+  text-decoration: none; /* Optional: removes underline from links */
+  border-radius: 15px; /* Optional: adds rounded corners */
+  width: 90%;
+  height: 3vh;
+}
