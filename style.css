@@ -182,7 +182,7 @@ height: 20em;
 
 .works-grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 25em));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
   grid-template-rows: repeat(2, 25em);
   gap: 2em;
 }
