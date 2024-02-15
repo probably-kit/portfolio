@@ -262,14 +262,22 @@ svg {
       margin-bottom: 2em;
   }
 
+  .crursive-title{
+    margin-bottom: 1em;
+  }
   .header-links {
       justify-content: center;
       margin: 0.5em 0; /* Add some margin between links */
   }
-
+  .row > p.crursive-title{
+    margin-top:-1em; ;
+   
+  }
   .container{
       flex-direction: column;
       align-items: center;
+      margin-bottom: 4em;
+      margin-top: 4em;
   }
 
   .grid-item, .works-grid-item {
@@ -300,10 +308,12 @@ svg {
 
   .arrow-container {
       top: 3.8em; /* Adjust position */
-      left: 55%; /* Center the arrows */
-      transform: translateX(-50%); /* Center align properly */
+       left: 5.3em;
+      transform: translateX(50%); /* Center align properly */
   }
-
+ .long > p.crursive-title{
+    align-self: center;
+  }
   .arrow {
     
     width: 15px;
