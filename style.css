@@ -241,6 +241,7 @@ svg {
 
 #library {
   background-image: url('./img/library.png');
+  height: 25em;
 }
 
 .works-grid-item a {
@@ -288,7 +289,7 @@ svg {
 
   .grid-item, .works-grid-item {
       width: 90%; /* Adjust width to fit smaller screens */
-      margin: 10px 0; /* Add some space between items */
+       /* Add some space between items */
   }
 
 
