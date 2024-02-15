@@ -149,9 +149,7 @@ height: 20em;
 .skills-grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 25em));
-  /* Creates 4 columns */
   grid-template-rows: repeat(2, 25em);
-  /* Creates 2 rows */
   padding: 10px;
   margin: 2em;
 }
@@ -197,7 +195,7 @@ height: 20em;
   padding: 1em;
   background-size: cover;
   background-position: center;
-  min-width: 0; 
+ 
 }
 
 
@@ -318,5 +316,9 @@ svg {
     align-items: center;
     justify-content: center;
     margin-inline:1em ;
+  }
+  .works-grid-container {
+   
+    gap: 1em;
   }
 }
