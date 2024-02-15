@@ -1,16 +1,36 @@
+@font-face {
+  font-family: 'Blank';
+  src: url('fonts/Blank\ Space\ Serif.ttf'),
+       url('fonts/Blank\ Space\ Serif.ttf');
+}
+
+@font-face {
+  font-family:'Machina' ;
+  src: url('fonts/NeueMachina-Light.otf'),
+        url('fonts/NeueMachina-Regular.otf'),
+        url('fonts/NeueMachina-Ultrabold.otf');
+
+}
+
+
 body {
   background-color: #202020;
   color: #ffffff;
-  font-family: Arial, sans-serif;
+  font-family: Machina;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header {
+  
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 8em;
+  font-size: 1.3em;
+  margin-bottom: 6em;
 }
 
 a {
@@ -171,8 +191,8 @@ height: 20em;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   border-radius: 25px;
   padding: 1em;
   background-size: cover;
@@ -189,6 +209,7 @@ h1 {
 
 .crursive-title {
   font-size: 9em;
+  font-family: Blank;
   margin: 0;
   padding: 0;
 }
@@ -210,7 +231,7 @@ svg {
 }
 
 #todo {
-  background-image: url('./img/todo.png');
+  background-image: url('./img/todo-ipad.png');
 }
 
 #library {
@@ -220,11 +241,76 @@ svg {
 .works-grid-item a {
   display: inline-block;
   padding: .5em 1em;
-  margin-top: 1em; /* Adjust as needed */
-  color: #fff; /* Adjust color as needed */
-  background-color: rgba(66, 65, 65, 0.658); /* Semi-transparent gray background */
-  text-decoration: none; /* Optional: removes underline from links */
-  border-radius: 15px; /* Optional: adds rounded corners */
+  margin-top: 1em;
+  color: #fff;
+  background-color: rgba(53, 51, 51, 0.534); /* Semi-transparent background */
+  text-decoration: none;
+  border-radius: 15px;
   width: 90%;
   height: 3vh;
+  backdrop-filter: blur(8px); /* Apply blur to the background behind the element */
+}
+
+
+/* Adjustments for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  body {
+      font-size: 14px; /* Smaller font size */
+  }
+
+  header {
+    font-size: 0.7em;
+      margin-bottom: 2em;
+  }
+
+  .header-links {
+      justify-content: center;
+      margin: 0.5em 0; /* Add some margin between links */
+  }
+
+  .container{
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .grid-item, .works-grid-item {
+      width: 90%; /* Adjust width to fit smaller screens */
+      margin: 10px 0; /* Add some space between items */
+  }
+
+  
+
+  h1, .crursive-title {
+      font-size: 4em; /* Adjust headline size for smaller screens */
+  }
+
+  svg {
+      height: 4em; /* Adjust SVG size */
+      width: 4em;
+  }
+
+  .scroll-box > svg {
+      width: 10em; /* Make the scroll graphic smaller */
+      height: 10em;
+  }
+
+  .arrow-container {
+      top: 3.8em; /* Adjust position */
+      left: 55%; /* Center the arrows */
+      transform: translateX(-50%); /* Center align properly */
+  }
+
+  .arrow {
+    
+    width: 15px;
+    height: 15px; 
+  }
+
+  .adaptive-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline:1em ;
+  }
 }
