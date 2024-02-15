@@ -171,7 +171,6 @@ height: 20em;
 }
 
 
-
 .light {
   background-color: #38383800;
 
@@ -225,6 +224,10 @@ svg {
  display: flex;
  flex-direction: column;
  align-items: flex-start;
+}
+.grid-item > div  > p {
+ text-align: left;
+ font-size: 0.9em;
 }
 
 
