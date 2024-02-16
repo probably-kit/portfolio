@@ -254,6 +254,7 @@ svg {
   border-radius: 15px;
   width: 90%;
   height: 3vh;
+  font-size: 12px;
   backdrop-filter: blur(8px); /* Apply blur to the background behind the element */
 }
 
