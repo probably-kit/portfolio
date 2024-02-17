@@ -151,7 +151,7 @@ height: 20em;
 
 .skills-grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 25em));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 20em));
   grid-template-rows: repeat(2, 25em);
   padding: 10px;
   margin: 2em;
