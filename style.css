@@ -151,7 +151,7 @@ height: 20em;
 
 .skills-grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 20em));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 22em));
   grid-template-rows: repeat(2, 25em);
   padding: 10px;
   margin: 2em;
@@ -298,7 +298,9 @@ svg {
     grid-column: span 1; /* Make long items span only 1 column on small screens */
   }
 
-  
+  .hide-on-small-screen {
+    display: none;
+  }
 
   h1, .crursive-title {
       font-size: 4em; /* Adjust headline size for smaller screens */
