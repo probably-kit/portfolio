@@ -1,0 +1,344 @@
+@font-face {
+  font-family: 'Blank';
+  src: url('fonts/Blank\ Space\ Serif.ttf'),
+       url('fonts/Blank\ Space\ Serif.ttf');
+}
+
+@font-face {
+  font-family:'Machina' ;
+  src: url('fonts/NeueMachina-Light.otf'),
+        url('fonts/NeueMachina-Regular.otf'),
+        url('fonts/NeueMachina-Ultrabold.otf');
+
+}
+
+
+body {
+  background-color: #202020;
+  color: #ffffff;
+  font-family: Machina;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='719' height='86.3' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='3' stroke-opacity='0.66'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+header {
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3em;
+  margin-bottom: 6em;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header-links {
+  display: flex;
+  gap: 0.5em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.row {
+  flex-direction: row;
+
+}
+
+.width-limit {
+  max-width: 20em;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.scroll-indicator {
+  text-align: center;
+  margin: 6em;
+}
+
+.scroll-text {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+  animation: fadeIn 4s infinite;
+}
+
+@keyframes fadeIn {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.border-path {
+  fill: none;
+  stroke: gray;
+  stroke-width: 0.5; /* Adjust the border thickness here */
+}
+
+.arrow-container {
+  position: absolute;
+  top: 8em;
+  left:10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin-left: -12.5px;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  transform: rotate(45deg);
+  animation: scrollDown 2s infinite;
+  box-sizing: border-box;
+}
+
+.arrow:nth-child(2) {
+  animation-delay: 0.75s; /* Start the second arrow's animation later */
+}
+
+@keyframes scrollDown {
+  0% {
+      opacity: 0;
+      bottom: 0;
+  }
+
+  50% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0;
+
+  }
+}
+.scroll-box{
+  text-align: center; 
+  position: relative;
+
+}
+
+.scroll-box > svg {
+width: 20em;
+height: 20em;
+
+}
+
+.skills-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 23em));
+  grid-template-rows: repeat(2, 25em);
+  padding: 10px;
+  margin: 2em;
+}
+
+.grid-item {
+  background-color: #2020202d;
+  /* border: 1px solid #ffffff; */
+  padding: 20px;
+ 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+
+.light {
+  background-color: #38383800;
+
+}
+
+.long {
+  grid-column: span 2;
+}
+
+.works-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  grid-template-rows: repeat(2, 25em);
+  gap: 2em;
+}
+
+.works-grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  border-radius: 25px;
+  padding: 1em;
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+
+
+h1 {
+  font-size: 9em;
+  margin: 0;
+  padding: 0;
+}
+
+.crursive-title {
+  font-size: 9em;
+  font-family: Blank;
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  height: 6em;
+  width: 6em;
+}
+
+.grid-item > div  {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+}
+.grid-item > div  > p {
+ text-align: left;
+ font-size: 0.9em;
+}
+
+
+#sub {
+  background-image: url('./img/subscription-menu.png');
+}
+
+#todo {
+  background-image: url('./img/todo-ipad.png');
+}
+
+#library {
+  background-image: url('./img/library.png');
+  height: 23em;
+}
+
+.works-grid-item a {
+  display: inline-block;
+  padding: .5em 1em;
+  margin-top: 1em;
+  color: #fff;
+  background-color: rgba(53, 51, 51, 0.534); /* Semi-transparent background */
+  text-decoration: none;
+  border-radius: 15px;
+  width: 90%;
+  height: 3vh;
+  font-size: 12px;
+  backdrop-filter: blur(8px); /* Apply blur to the background behind the element */
+}
+
+
+/* Adjustments for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  body {
+      font-size: 14px; /* Smaller font size */
+  }
+
+  header {
+    font-size: 0.7em;
+      margin-bottom: 2em;
+  }
+
+  .crursive-title{
+    margin-bottom: 1em;
+  }
+  .header-links {
+      justify-content: center;
+      margin: 0.5em 0; /* Add some margin between links */
+  }
+  .row > p.crursive-title{
+    margin-top:-1em; ;
+   
+  }
+  .container{
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 4em;
+      margin-top: 4em;
+  }
+
+  .grid-item, .works-grid-item {
+      width: 90%; /* Adjust width to fit smaller screens */
+       /* Add some space between items */
+  }
+
+
+  .long {
+    grid-column: span 1; /* Make long items span only 1 column on small screens */
+  }
+
+  .hide-on-small-screen {
+    display: none;
+  }
+
+  h1, .crursive-title {
+      font-size: 4em; /* Adjust headline size for smaller screens */
+  }
+
+  svg {
+      height: 4em; /* Adjust SVG size */
+      width: 4em;
+  }
+
+  .scroll-box > svg {
+      width: 10em; /* Make the scroll graphic smaller */
+      height: 10em;
+  }
+
+  .arrow-container {
+      top: 3.8em; /* Adjust position */
+       left: 5.3em;
+      transform: translateX(50%); /* Center align properly */
+  }
+ .long > p.crursive-title{
+    align-self: center;
+  }
+  .arrow {
+    
+    width: 15px;
+    height: 15px; 
+  }
+
+  .adaptive-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline:1em ;
+  }
+  .works-grid-container {
+   
+    gap: 1em;
+  }
+}
