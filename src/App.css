@@ -1,15 +1,13 @@
 @font-face {
   font-family: 'Blank';
-  src: url('fonts/Blank\ Space\ Serif.ttf'),
-       url('fonts/Blank\ Space\ Serif.ttf');
+  src: url('/fonts/Blank Space Serif.ttf') format('truetype');
 }
 
 @font-face {
-  font-family:'Machina' ;
-  src: url('fonts/NeueMachina-Light.otf'),
-        url('fonts/NeueMachina-Regular.otf'),
-        url('fonts/NeueMachina-Ultrabold.otf');
-
+  font-family: 'Machina';
+  src: url('/fonts/NeueMachina-Light.otf') format('opentype'),
+       url('/fonts/NeueMachina-Regular.otf') format('opentype'),
+       url('/fonts/NeueMachina-Ultrabold.otf') format('opentype');
 }
 
 
