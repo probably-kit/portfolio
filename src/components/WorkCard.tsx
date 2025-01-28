@@ -1,12 +1,11 @@
 import React from 'react';
-// import './WorkCard.css'; 
-
+import "./WorkCard.css"
 interface WorkCardProps {
   id?: string;
   link: string;
   text: string;
   backgroundImage: string;
-  isLong?: boolean;
+  isWide?: boolean;
 }
 
 const WorkCard: React.FC<WorkCardProps> = ({
@@ -14,9 +13,9 @@ const WorkCard: React.FC<WorkCardProps> = ({
   link,
   text,
   backgroundImage,
-  isLong
+  isWide
 }) => {
-  const cardClass = `works-grid-item ${isLong ? 'long' : ''}`;
+  const cardClass = `works-grid-item ${isWide ? 'wide' : ''}`;
   
   return (
     <div

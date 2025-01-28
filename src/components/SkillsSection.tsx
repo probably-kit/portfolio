@@ -4,7 +4,6 @@ import SkillCard from './SkillCard';
 const SkillsSection: React.FC = () => {
   return (
     <div className="skills-grid-container">
-      {/* Section Title */}
       <div className="grid-item long">
         <p className="crursive-title">Skills</p>
       </div>
@@ -42,7 +41,7 @@ const SkillsSection: React.FC = () => {
     
       <div className="grid-item hide-on-small-screen" />
 
-      {/* Example 3: MongoDB Card */}
+     
       <SkillCard
         className="light"
         title="MongoDB"

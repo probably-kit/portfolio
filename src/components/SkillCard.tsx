@@ -11,10 +11,7 @@ interface SkillCardProps {
 const SkillCard: React.FC<SkillCardProps> = ({ title, description, svg, className }) => {
   return (
     <div className={`grid-item ${className || ''}`}>
-      {/* SVG or Icon */}
       {svg}
-
-      {/* Text Content */}
       <div>
         <h3>{title}</h3>
         <p>{description}</p>

@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3em;
+    margin-bottom: 6em;
+}
+
+.header-links {
+    display: flex;
+    gap: 0.5em;
+}
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        font-size: 0.7em;
+        margin-bottom: 2em;
+    }
+
+    .header-links {
+        justify-content: center;
+        margin: 0.5em 0;
+    }
+}

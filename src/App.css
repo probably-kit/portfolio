@@ -25,24 +25,14 @@ body {
 
 }
 
-header {
-  
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 1.3em;
-  margin-bottom: 6em;
-}
+
 
 a {
   text-decoration: none;
   color: #ffffff;
 }
 
-.header-links {
-  display: flex;
-  gap: 0.5em;
-}
+
 
 .container {
   display: flex;
@@ -178,28 +168,6 @@ height: 20em;
   grid-column: span 2;
 }
 
-.works-grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
-  grid-template-rows: repeat(2, 25em);
-  gap: 2em;
-}
-
-.works-grid-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  text-align: left;
-  border-radius: 25px;
-  padding: 1em;
-  background-size: cover;
-  background-position: center;
- 
-}
-
-
-
 h1 {
   font-size: 9em;
   margin: 0;
@@ -242,19 +210,7 @@ svg {
   height: 23em;
 }
 
-.works-grid-item a {
-  display: inline-block;
-  padding: .5em 1em;
-  margin-top: 1em;
-  color: #fff;
-  background-color: rgba(53, 51, 51, 0.534); /* Semi-transparent background */
-  text-decoration: none;
-  border-radius: 15px;
-  width: 90%;
-  height: 3vh;
-  font-size: 12px;
-  backdrop-filter: blur(8px); /* Apply blur to the background behind the element */
-}
+
 
 
 /* Adjustments for screens smaller than 768px */
@@ -263,18 +219,10 @@ svg {
       font-size: 14px; /* Smaller font size */
   }
 
-  header {
-    font-size: 0.7em;
-      margin-bottom: 2em;
-  }
-
   .crursive-title{
     margin-bottom: 1em;
   }
-  .header-links {
-      justify-content: center;
-      margin: 0.5em 0; /* Add some margin between links */
-  }
+  
   .row > p.crursive-title{
     margin-top:-1em; ;
    

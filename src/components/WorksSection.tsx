@@ -1,5 +1,6 @@
 import React from 'react';
 import WorkCard from './WorkCard';
+import "./WorksSection.css"
 
 const WorksSection: React.FC = () => {
   return (
@@ -8,24 +9,24 @@ const WorksSection: React.FC = () => {
 
       <div className="works-grid-container">
         <WorkCard
-          id="library"
+          id=""
           link="https://werner-home.vercel.app/"
-          text="REal Estate Agency / Designing Your Next Chapter"
-          backgroundImage="/img/real-estate.png"
-          isLong
+          text="Real Estate Agency / Designing Your Next Chapter"
+          backgroundImage="public/img/Background-main-image.jpg"
+          isWide
         />
         <WorkCard
-          id="sub"
+          id=""
           link="https://probably-kit.github.io/subscription-choice-menu/"
           text="Subscription menu / Stripe payments"
-          backgroundImage="/img/subscription-menu.png"
+          backgroundImage="/img/subscription-menu-new.jpg"
           
         />
         <WorkCard
-          id="todo"
+          id=""
           link="https://probably-kit.github.io/todo-list/"
           text="Todo list / Plan your day"
-          backgroundImage="/img/todo-ipad.png"
+          backgroundImage="/img/todo-new.jpg"
         />
         
       </div>

@@ -1,0 +1,21 @@
+.works-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(600px, 2fr));
+    grid-template-rows: repeat(2, 670px);
+    gap: 4em;
+    margin: 1em;
+  }
+
+  @media (max-width: 768px) {
+    .works-grid-container {
+        grid-template-columns: 1fr; 
+        grid-auto-rows: 300px; 
+        gap: 2em;
+        margin: 0.5em;
+    }
+
+    .wide{
+        grid-column: span 1
+    }
+    
+}

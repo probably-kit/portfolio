@@ -4,7 +4,6 @@ import ScrollBox from './ScrollBox';
 const IntroSection: React.FC = () => {
   return (
     <div className="container">
-      {/* Introduction Text */}
       <div className="container">
         <div className="adaptive-title">
           <h1>I AM</h1>
@@ -19,7 +18,6 @@ const IntroSection: React.FC = () => {
         </div>
       </div>
 
-      {/* Scroll Box (circle + arrow) */}
       <ScrollBox />
     </div>
   );
