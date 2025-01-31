@@ -12,7 +12,7 @@ const WorksSection: React.FC = () => {
           id=""
           link="https://werner-home.vercel.app/"
           text="Real Estate Agency / Designing Your Next Chapter"
-          backgroundImage="public/img/Background-main-image.jpg"
+          backgroundImage="/img/Background-main-image.jpg"
           isWide
         />
         <WorkCard
